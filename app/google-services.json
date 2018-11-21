@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "730408157432",
+    "firebase_url": "https://planterium-aa2f0.firebaseio.com",
+    "project_id": "planterium-aa2f0",
+    "storage_bucket": "planterium-aa2f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730408157432:android:50f64a875ebcadea",
+        "android_client_info": {
+          "package_name": "com.dngwjy.planterium"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730408157432-1erpog82friq1ugecd88jp6hlkbrf3bk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dngwjy.planterium",
+            "certificate_hash": "2f7b0cf80f90c226a14967e35a6b28a034ca6bd2"
+          }
+        },
+        {
+          "client_id": "730408157432-p08odqmfijtajf91s6p14nt8ost5c9c6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDapf74TFK-2nO8veCOV3yL7CYa5FaYUNk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730408157432-p08odqmfijtajf91s6p14nt8ost5c9c6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
