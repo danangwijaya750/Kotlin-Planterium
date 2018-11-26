@@ -1,10 +1,16 @@
 package com.dngwjy.planterium
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.ImageView
+import androidx.appcompat.widget.Toolbar
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.content_main.*
+
 class MainActivity : AppCompatActivity() {
 val dataBase:FirebaseDatabase= FirebaseDatabase.getInstance()
     val dataRef : DatabaseReference = dataBase.reference
@@ -14,6 +20,17 @@ val dataBase:FirebaseDatabase= FirebaseDatabase.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val toolbar = findViewById<View>(R.id.toolbar) as Toolbar
+        setSupportActionBar(toolbar)
+
+        val icAbout = findViewById<View>(R.id.about) as ImageView
+
+        icAbout.setOnClickListener {
+            val i = Intent(this@MainActivity, AboutActivity::class.java)
+            startActivity(i)
+        }
+
         controlling.addValueEventListener(object : ValueEventListener{
             override fun onCancelled(p0: DatabaseError) {
                 Log.d("error","failed ${p0.message}")
